@@ -1,5 +1,5 @@
 {% set name = "regain" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 03a83d3c58c36f71cdf2be5a987630a0a603c190a7acc62a085bb45deca2699e
+  sha256: a4a443fdca8796206e80c3a2f5cd9a3b65aee946e909bcebc8a68aa5744903da
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/fdtomasi/regain
-  summary: "REGAIN (Regularised Graphical Inference)."
+  summary: REGAIN (Regularised Graphical Inference).
   description: |
     Regularised graph inference across multiple time stamps, considering the influence of latent variables. 
     It inherits functionalities from the scikit-learn package.
